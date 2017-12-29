@@ -14,4 +14,7 @@ There are a few important changes:
 
 # What are you still looking to do?
 
-I probably haven't ripped out all of the functionality that doesn't relate to summarization, so that's on the to do list. I'll also go over the code again to make sure there aren't any unnecessary Python 2-compatibility checks. Also, I just realized that all of the tests assume the input is English, so I'll have to come up with some Dutch language test data.
++ rip out all of the functionality that doesn't relate to summarization
++ evaluate whether the sentence segmentation and abbreviation regexes in `utils.py` are sufficient for Dutch, and if not look at spaCy-based solutions 
++ go over the code again to make sure there aren't any unnecessary Python 2-compatibility checks
++ I just realized that all of the tests assume the input is English, so I'll have to come up with some Dutch test data
