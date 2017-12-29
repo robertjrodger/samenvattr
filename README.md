@@ -12,3 +12,6 @@ There are a few important changes:
 + the English Porter stemmer was swapped out with nltk's [Dutch snowball stemmer](http://www.nltk.org/_modules/nltk/stem/snowball.html#DutchStemmer)
 + most code and tests relating to non-summarization corners of the API were ripped out
 
+# What are you still looking to do?
+
+I probably haven't ripped out all of the functionality that doesn't relate to summarization, so that's on the to do list. I'll also go over the code again to make sure there aren't any unnecessary Python 2-compatibility checks. Also, I just realized that all of the tests assume the input is English, so I'll have to come up with some Dutch language test data.
