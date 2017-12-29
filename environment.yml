@@ -1,0 +1,11 @@
+name: samenvattr
+dependencies:
+- numpy=1.13.3
+- pip=9.0.1
+- python=3.6.4
+- scipy=1.0.0
+- pip:
+  - nltk==3.2.5
+  - pattern3==3.0.0
+  - pyro4==4.63
+  - smart-open==1.5.3
