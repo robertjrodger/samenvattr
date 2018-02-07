@@ -2,6 +2,25 @@
 
 Dutch-language extractive text summarization tool. Almost everything was ripped out of Gensim's amazing English language extractive summarization tool; they deserve the lion's share of the credit and you can visit the relevant doc from their API [here](https://radimrehurek.com/gensim/summarization/summariser.html).
 
+# How do I use it?
+
+```python
+from samenvattr import summarize
+
+article = "...some text..."
+summarize(article, word_count=100)
+```
+
+Of course, you can use a word count of your choice. What's returned are the most important sentences, in order, concatenated with a newline in between. It's a bit sensitive to whitespace characters, so it's a good idea to run your `article` through this function first before passing it to `summarize`:
+
+```python
+def preprocess_text(text):
+    import re
+    text = re.sub(r'\n|\r|\t', ' ', text)
+    text = re.sub(r'\s+', ' ', text)
+    return text
+```
+
 # What exactly did you do, then?
 
 There are a few important changes:
